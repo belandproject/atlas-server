@@ -52,7 +52,7 @@ function fromSpecialTile(specialTile: SpecialTile): Tile {
   }
 }
 export function addSpecialTiles(tiles: Record<string, Tile>) {
-  for (const specialTile of Object.values(specialTiles)) {
+  for (const specialTile of Object.values()) {
     tiles[specialTile.id] = specialTile.id in tiles
       ? tiles[specialTile.id]
       : fromSpecialTile(specialTile)
