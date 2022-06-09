@@ -12,11 +12,11 @@ export function createImageComponent(components: {
   function getColor(tile: Tile) {
     switch (tile.type) {
       case TileType.DISTRICT:
-        return '#5054D4'
+        return '#37829b'
       case TileType.PLAZA:
-        return '#70AC76'
+        return '#4A5ACD'
       case TileType.ROAD:
-        return '#716C7A'
+        return '#a0a0a0'
       case TileType.OWNED:
         return '#3D3A46'
       case TileType.UNOWNED:
